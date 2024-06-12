@@ -18,3 +18,6 @@
 
 Пример запрос для тестового отправки письма
 `curl -X POST -H "Content-Type: application/json" -d '{"id": "89547"}' http://localhost:3001/api/ticket/email`
+
+
+TCAVS
