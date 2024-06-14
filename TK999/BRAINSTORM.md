@@ -46,3 +46,5 @@
 Новый paymentStatus `addinitional`
 
 
+#### `trips`:
+Новое поле `is_addinitional`
