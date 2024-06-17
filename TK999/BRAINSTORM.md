@@ -48,3 +48,4 @@
 
 #### `trips`:
 Новое поле `is_addinitional`
+
