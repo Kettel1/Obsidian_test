@@ -21,3 +21,42 @@
 
 
 Количетсво билетов в промежутке по времени
+ `const sixDaysAgo = addDays(startOfDay(new Date()), -60);`
+
+  `const tickets = await prisma.ticket.findMany({`
+    `where: {`
+      `route_id: 10,`
+      `order: {`
+        `author_type: "agentHM",`
+      `},`
+      `created_at: {`
+        `gte: sixDaysAgo, // Больше или равно 60 дней назад`
+        `lt: new Date(), // Меньше текущей даты и времени`
+      `},`
+    `},`
+  `});`
+
+  `const ticketsBetweenElevenAndTwelve = tickets.filter((ticket) => {`
+    `const elevenAM = new Date(ticket.created_at);`
+    `elevenAM.setHours(15, 30, 0, 0); // Установим время 11:00`
+
+    `const twelvePM = new Date(ticket.created_at);`
+    `twelvePM.setHours(16, 0, 0, 0); // Установим время 12:00`
+
+    `if (`
+      `isWithinInterval(ticket.created_at, {`
+        `start: elevenAM,`
+        `end: twelvePM,`
+      `})`
+    `) {`
+      `console.log({`
+        `ticket_id: ticket.id,`
+      `});`
+      `return true;`
+    `} else {`
+      `return false;`
+    `}`
+  `});`
+
+
+scp tk999:/root/stage1/PROD_DUMP_30_APR.sql ./Desktop/DUMPS
