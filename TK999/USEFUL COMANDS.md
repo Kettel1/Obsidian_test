@@ -57,6 +57,3 @@
       `return false;`
     `}`
   `});`
-
-
-scp tk999:/root/stage1/PROD_DUMP_30_APR.sql ./Desktop/DUMPS
