@@ -17,5 +17,3 @@
 - [x] Редактирование TCAVS билетов
 - [x] Оповещение о том, что пропал интернет
 - [ ] Поменять схему маршрутки
-
-docker compose exec mysql mysqldump -uroot -pexample tk999 > PROD_DUMP_30JUNE_MIGRATE_SAVE_PASS.sql
