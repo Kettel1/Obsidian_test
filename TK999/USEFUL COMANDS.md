@@ -71,9 +71,7 @@ UPDATE users SET role = 'Dispatcher' WHERE id = 6630;
 
 
 
-1 работают ли исходящие с телефона 62999
-если убрать с корп связи 62999
-
+`docker compose exec runner node ./prisma/bin/deleteEmptyOrders.js`
 
 
 
