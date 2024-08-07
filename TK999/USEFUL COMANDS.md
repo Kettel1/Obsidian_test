@@ -10,8 +10,6 @@
 Зайти в базу на проде
 `docker compose exec mysql mysql -h 127.0.0.1 -P 3306 -uroot -pexample`
 
-6630
-
 Полезные комадны MYSQL
 1. Удалить билет
 `DELETE FROM tickets WHERE id IN (131626, 131627, 131628, 131633);`
@@ -70,9 +68,6 @@ UPDATE users SET role = 'Dispatcher' WHERE id = 6630;
 Здравствуйте! Вас приветствует транспортная компания 999. Мы принимаем звонки с 09:00 до 19:00. Вы можете приобрести билеты на нашем сайте tk999.ru. По остальным вопросам ждем вашего звонка в рабочее время. Всего доброго
 
 
-
-docker compose exec runner node ./prisma/bin/deleteOlderTickets.js
-docker compose exec runner node ./prisma/bin/migrateAgentsTickets.js
 
 
 
