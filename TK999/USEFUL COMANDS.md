@@ -71,7 +71,8 @@ UPDATE users SET role = 'Dispatcher' WHERE id = 6630;
 
 
 
-`docker compose exec runner node ./prisma/bin/deleteEmptyOrders.js`
+docker compose exec runner node ./prisma/bin/deleteOlderTickets.js
+docker compose exec runner node ./prisma/bin/migrateAgentsTickets.js
 
 
 
