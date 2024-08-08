@@ -35,3 +35,6 @@
 19. [x] Сменить роль у надежды
 20. [x] Тцавс дополнить енам
 21. [ ] Убрать учет броней 
+
+
+SELECT * FROM orders WHERE author_type = 'agentHM' AND DATE(created_at) = CURDATE();
