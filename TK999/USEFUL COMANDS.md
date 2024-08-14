@@ -12,7 +12,7 @@
 
 Полезные комадны MYSQL
 1. Удалить билет
-`DELETE FROM tickets WHERE id IN (131626, 131627, 131628, 131633);`
+`DELETE FROM tickets WHERE id IN (131626, 149093, 149094, 148388);`
 2. Обновить роль у пользователя
 `UPDATE users SET role = 'Developer' WHERE id = 1301;`
 
