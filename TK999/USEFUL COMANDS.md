@@ -17,6 +17,9 @@
 `UPDATE users SET role = 'Developer' WHERE id = 1301;`
 
 
+DELETE FROM tickets WHERE id IN (151142);
+
+
 UPDATE users SET role = 'Dispatcher' WHERE id = 6630;
 
 Пример запрос для тестового отправки письма
